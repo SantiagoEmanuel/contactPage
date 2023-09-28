@@ -13,3 +13,8 @@
 > - [x] Dropdown should at least 2 options, it's up to you which more options to add but the default must be same as in the design
 > - [x] Use CSS or CSS frameworks to style the card
 > - [x] The page should bt responsive on different screen sizes
+
+## Screenshots
+
+![screenshot](https://github.com/SantiagoEmanuel/contactPage/blob/master/public/pc-view.png "PC VIEW")
+![screenshot](https://github.com/SantiagoEmanuel/contactPage/blob/master/public/mobile-view.png "MOBILE VIEW")
