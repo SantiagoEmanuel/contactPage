@@ -5,9 +5,9 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Contact">
   <main class="w-full flex flex-col items-center gap-14 mt-4 mb-14">
     <header
-      class="text-center w-[750px] max-[1026px]:w-[360px] flex flex-col max-[1026px]:gap-3"
+      class="text-center w-[620px] max-[1026px]:w-[340px] flex flex-col max-[1026px]:gap-3"
     >
-      <h1 class="text-[4rem] max-[1026px]:text-[2.5rem] font-bold">
+      <h1 class="text-[4rem] max-[1026px]:text-[2.4rem] font-bold">
         Interested in our business pricing?
       </h1>
       <p class="text-[2rem] max-[1026px]:text-lg text-[#CDD5E0]">
@@ -17,7 +17,7 @@ import Layout from "../layouts/Layout.astro";
     </header>
     <section>
       <form
-        class="p-8 max-[600px]:p-4 bg-[#f8fafc42] text-[#111729] font-bold w-[800px] max-[1026px]:w-[950px] max-[950px]:w-[600px] max-[600px]:w-full rounded-xl flex flex-col gap-6"
+        class="p-8 max-[600px]:p-4 bg-[#f8fafc42] text-[#111729] font-bold w-[920px] max-[1026px]:w-[950px] max-[950px]:w-[600px] max-[600px]:w-full rounded-xl flex flex-col gap-6"
       >
         <div class="flex max-[950px]:flex-col gap-4 w-full">
           <div class="flex flex-col w-full">
@@ -90,6 +90,15 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+  h1 {
+    line-height: 5.8rem;
+  }
+
+  @media (max-width: 1026px) {
+    h1 {
+      line-height: 4rem;
+    }
+  }
   input,
   textarea {
     outline: none;
