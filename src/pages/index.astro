@@ -2,110 +2,109 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main class="flex flex-col items-center gap-[75px] mb-14 mt-4">
+<Layout title="Contact">
+  <main class="w-full flex flex-col items-center gap-14 mt-4 mb-14">
     <header
-      class="w-[600px] max-[1100px]:w-[400px] text-center flex flex-col gap-3"
+      class="text-center w-[750px] max-[1026px]:w-[360px] flex flex-col max-[1026px]:gap-3"
     >
-      <h1 class="font-bold text-[4rem] max-[1100px]:text-[2.8rem] font-Be">
+      <h1 class="text-[4rem] max-[1026px]:text-[2.5rem] font-bold">
         Interested in our business pricing?
       </h1>
-      <h3 class="text-[2rem] max-[1100px]:text-base font-Be">
-        Fill out the form to view details and we’ll contact you as soon as
+      <p class="text-[2rem] max-[1026px]:text-lg text-[#CDD5E0]">
+        Fill out the form to view details and we'll conctact you as soon as
         possible.
-      </h3>
+      </p>
     </header>
-
-    <form
-      class="w-[900px] max-[905px]:w-[600px] bg-[#F8FAFC] bg-opacity-25 rounded-2xl p-8 flex flex-col gap-6"
-    >
-      <div class="flex flex-col gap-6">
-        <div
-          class="flex gap-[2rem] max-[905px]:gap-4 items-center justify-center max-[905px]:flex-col"
-        >
-          <div class="flex flex-col">
-            <label for="name" class="text-sm font-Be">Name</label>
+    <section>
+      <form
+        class="p-8 max-[600px]:p-4 bg-[#f8fafc42] text-[#111729] font-bold w-[800px] max-[1026px]:w-[950px] max-[950px]:w-[600px] max-[600px]:w-full rounded-xl flex flex-col gap-6"
+      >
+        <div class="flex max-[950px]:flex-col gap-4 w-full">
+          <div class="flex flex-col w-full">
+            <label class="text-sm text-white" for="name">Name</label>
             <input
               type="text"
-              name="name"
               id="name"
-              placeholder="Ethan Johnson"
-              class="placeholder-[#CDD5E0] w-[400px] max-[905px]:w-[535px] font-Be"
+              placeholder="Etham Johson"
+              class="p-4 placeholder-[#CDD5E0] w-full rounded-2xl"
             />
           </div>
-          <div class="flex flex-col">
-            <label for="email" class="text-sm font-Be">Company Email</label>
+          <div class="flex flex-col w-full">
+            <label class="text-sm text-white" for="company-email"
+              >Company Email</label
+            >
             <input
               type="email"
-              name="email"
-              id="email"
+              id="company-email"
               placeholder="ethan@johnson.com"
-              class="placeholder-[#CDD5E0] w-[400px] max-[905px]:w-[535px] font-Be"
+              class="p-4 placeholder-[#CDD5E0] w-full rounded-2xl"
             />
           </div>
         </div>
-        <div
-          class="flex gap-[2rem] max-[905px]:gap-4 items-center justify-center max-[905px]:flex-col"
-        >
-          <div class="flex flex-col">
-            <label for="company-size" class="text-sm font-Be"
+        <div class="flex max-[950px]:flex-col gap-4 w-full">
+          <div class="flex flex-col w-full">
+            <label class="text-sm text-white" for="company-size"
               >Company Size</label
             >
             <select
+              class="p-4 w-full rounded-2xl"
+              name="company-size"
               id="company-size"
-              class="w-[400px] max-[905px]:w-[535px] text-black font-bold font-Be"
             >
               <option value="50-100-employees">50-100 employees</option>
-              <option value="101-150-employees">101-150 employees</option>
-              <option value="151-200-employees">151-200 employees</option>
+              <option value="101-300-employees">101-300 employees</option>
             </select>
           </div>
-          <div class="flex flex-col">
-            <label for="subject" class="text-sm font-Be">Subject</label>
-            <select
-              name="subject"
-              id="subject"
-              class="w-[400px] max-[905px]:w-[535px] text-black font-bold font-Be"
-            >
-              <option value="building-landing-pages"
-                >Building Landing pages</option
-              >
-              <option value="frontend">Frontend</option>
-              <option value="backend">Backend</option>
+          <div class="flex flex-col w-full">
+            <label class="text-sm text-white" for="subject">Subject</label>
+            <select class="p-4 w-full rounded-2xl" name="subject" id="subject">
+              <option value="building-landing-pages">
+                Building Landing pages
+              </option>
+              <option value="building-ecommerse-pages">
+                Building Ecommerse pages
+              </option>
             </select>
           </div>
         </div>
-      </div>
-      <div>
-        <label for="message" class="text-sm font-Be">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          class="w-full rounded-xl font-Be text-black font-bold p-5"
-          >50-100 employees</textarea
-        >
-      </div>
-      <button
-        type="submit"
-        class="bg-white text-[#4036A9] p-5 rounded-xl text-xl font-[800] font-Be"
-        >Contact Sales</button
-      >
-    </form>
+        <div class="flex flex-col w-full">
+          <label class="text-sm text-white" for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="rounded-2xl p-4">50-100 employees</textarea
+          >
+        </div>
+        <div class="w-ful">
+          <button
+            type="submit"
+            class="bg-white rounded-2xl w-full text-[#4036A9] p-4"
+            >Contact Sales</button
+          >
+        </div>
+      </form>
+    </section>
   </main>
 </Layout>
 
 <style>
   input,
-  select {
-    padding: 20px 15px;
-    border-radius: 6px;
-    color: black;
-    font-weight: bold;
-    outline: none;
-  }
   textarea {
     outline: none;
+  }
+  label {
+    font-weight: normal;
+  }
+  input,
+  select {
+    height: 4.5rem;
+  }
+  button {
+    letter-spacing: -0.05rem;
+    word-spacing: 0.2rem;
+    height: 4.5rem;
+    font-size: 1.25rem;
   }
 </style>
