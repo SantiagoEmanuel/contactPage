@@ -1,7 +1,6 @@
 # Challenge - Contact Page
 
-## Website
-### [Solution](https://fastidious-syrniki-d3ea00.netlify.app/)
+## [Website](https://fastidious-syrniki-d3ea00.netlify.app/)
 
 > ## About this project
 >
